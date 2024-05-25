@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern> ^</pattern>
+        <template>
+            Hello! Welcome to CS career guide! I'll help you choose your dream job with CS degree.<br />
+            Let's start with some questions. What is your favorite subject?
+            <button>
+                <text>Programming</text>
+                <postback>PROGRAMMING</postback>
+            </button>
+            <button>
+                <text>Data Management</text>
+                <postback>DATA</postback>
+            </button>
+            <button>
+                <text>Network and Security</text>
+                <postback>NETWORK</postback>
+            </button>
+        </template>
+    </category>
+
+    <!-- PROGRAMMING PATH -->
+    <category>
+        <pattern>PROGRAMMING</pattern>
+        <template>
+            Cool! So you like writing code.<br />
+            Which type of programming languages are you're more comfortable with?
+            <button>
+                <text>Low-level languages (C, C++, Assembly, etc.)</text>
+                <postback>LOW</postback>
+            </button>
+            <button>
+                <text>High-level languages (Java, C#, Python, etc.)</text>
+                <postback>HIGH</postback>
+            </button>
+            <button>
+                <text>Scripting languages (Python, Bash, JavaScript, etc.)</text>
+                <postback>SCRIPT</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SCRIPT</pattern>
+        <template>
+            Which one do you want to work with?
+            <button>
+                <text>Large datasets</text>
+                <postback>AI</postback>
+            </button>
+            <button>
+                <text>Hardwares</text>
+                <postback>SYSADMIN</postback>
+            </button>
+            <button>
+                <text>Cloud services</text>
+                <postback>DEVOPS</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- DATA PATH -->
+    <category>
+        <pattern>DATA</pattern>
+        <template>
+            Nice, so you enjoy working with data.<br />
+            Does algorithms and data structures interest you?
+            <button>
+                <text>Yes</text>
+                <postback>AI</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SYSADMIN</postback>
+            </button>
+        </template>
+    </category>
+
+    <!-- NETWORK PATH -->
+    <category>
+        <pattern>NETWORK</pattern>
+        <template>
+            Awesome! Which group do you prefer to collaborate with?
+            <button>
+                <text>IT supports</text>
+                <postback>SYSADMIN</postback>
+            </button>
+            <button>
+                <text>Developers</text>
+                <postback>DEVOPS</postback>
+            </button>
+        </template>
+    </category>
+
+    <!-- Suggestions -->
+    <category>
+        <pattern>LOW</pattern>
+        <template>
+            Firmware Engineer suits you best!<br />
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HIGH</pattern>
+        <template>
+            A career in Software Developing might interest you!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>AI</pattern>
+        <template>
+            You should consider a career as  an Artificial Intelligence/Machine Learning Engineer.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SYSADMIN</pattern>
+        <template>
+            You sound like a System Administrator!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DEVOPS</pattern>
+        <template>
+            Working as a DevOps Engineer is perfect for you!
+        </template>
+    </category>
+</aiml>
